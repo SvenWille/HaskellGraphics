@@ -1,0 +1,24 @@
+name:                Runner
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/SvenWille/Runner#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Sven Wille
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Other
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable Runner
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       gloss,
+                       vector,
+                       random
